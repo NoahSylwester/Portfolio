@@ -15,17 +15,17 @@ var mouse = {
   y: undefined
 }
 
-var numberOfCircles = 100;
+var numberOfCircles = 200;
 
-var maxRadius = 10;
-var minRadius = 2;
+var maxRadius = 5;
+var minRadius = 1;
 
 var colorArray = [
-  "gold",
-  "green",
-  "greenyellow",
-  "whitesmoke",
-  "black"
+  "rgba(255, 217, 0, 0.650)",
+  "rgba(0, 128, 0, 0.650)",
+  "rgba(172, 255, 47, 0.650)",
+  "rgba(0, 0, 0, 0.650)",
+  "rgba(0, 0, 0, 0.650)"
 ];
 
 window.addEventListener('mousemove', function(event) {
@@ -89,7 +89,7 @@ function init() {
   circleArray = [];
 
   for (let i = 0; i < numberOfCircles; i++) {
-    var radius = Math.random() * 3 + 1;
+    var radius = Math.random() * 1 + 1;
     var x = Math.random() * (innerWidth - 5 - radius * 2) + radius;
     var y = Math.random() * (innerHeight - 5 - radius * 2) + radius;
     var dx = (Math.random() - 0.5) * 0.5;
@@ -114,4 +114,13 @@ animate();
 // end code for splash page canvas
 // *******
 
+// *******
+// begin code for main portfolio
+// *******
 
+$('#enter').on('click', function(event) {
+  event.preventDefault();
+  $('splashpage').attr({"class":"fadeout"});
+  $('portfolio').css({"display":"block"})
+  $('portfolio').attr({"class":"fadein"});
+})
