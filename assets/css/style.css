@@ -1,0 +1,89 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+splashpage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  font-family: 'Julius Sans One', sans-serif;
+  color: rgb(185, 241, 255);
+  overflow: hidden;
+}
+
+.splash-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../images/IMG_0276\ copy.jpg");
+  background-size: 100%;
+}
+
+splashpage div {
+  text-shadow: 0 0 50px black; 
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem;
+  border: 2px rgb(185, 241, 255) solid;
+  border-radius: 4px;
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+
+#enter {
+  color: rgb(185, 241, 255) !important;
+  font-size: 2rem;
+  border: 2px rgb(185, 241, 255) solid;
+  border-radius: 1rem;
+}
+
+#enter:hover {
+  text-decoration: none;
+  color: rgb(151, 255, 151) !important;
+  border: 2px rgb(151, 255, 151) solid;
+}
+
+#enter:hover ~ .title {
+  color: rgb(151, 255, 151) !important;
+}
+
+#enter:active {
+  color: whitesmoke !important;
+  border: 2px whitesmoke solid;
+}
+
+#enter:active ~ .title {
+  color: whitesmoke !important;
+}
+
+@keyframes fadeout {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadein {
+  0% {opacity: 0; padding: 300px;}
+  100% {opacity: 1; padding: 2rem;}
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0; 
+  }
+
+  to {
+    text-shadow: 2px 2px 30px red;
+  }
+}
