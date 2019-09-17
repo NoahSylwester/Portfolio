@@ -13,6 +13,8 @@ body {
   position: relative;
 }
 
+/* begin css for splash page */
+
 splashpage {
   position: absolute;
   left: 0;
@@ -75,24 +77,29 @@ splashpage div {
   color: whitesmoke !important;
 }
 
+/* end css for splash page */
+
 portfolio {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
 }
 
 .fadeout {
-  animation-name: fadeout;
+  animation-name: fade;
   animation-duration: 2s;
   opacity: 0;
 }
 
 .fadein {
-  animation-name: fadein;
+  animation-name: fade;
   animation-duration: 2s;
+  animation-direction: reverse;
 }
 
-@keyframes fadeout {
+@keyframes fade {
   0% {opacity: 1;}
   100% {opacity: 0;}
 }
