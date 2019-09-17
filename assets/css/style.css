@@ -87,19 +87,28 @@ portfolio {
   top: 0;
 }
 
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .fadeout {
-  animation-name: fade;
+  animation-name: fade1;
   animation-duration: 2s;
-  opacity: 0;
 }
 
 .fadein {
-  animation-name: fade;
+  animation-name: fade2;
   animation-duration: 2s;
   animation-direction: reverse;
 }
 
-@keyframes fade {
+@keyframes fade1 {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fade2 {
   0% {opacity: 1;}
   100% {opacity: 0;}
 }

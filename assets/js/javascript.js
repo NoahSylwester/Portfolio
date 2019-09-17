@@ -118,6 +118,16 @@ animate();
 // begin code for main portfolio
 // *******
 
+$('.navbar-brand').on('click', function(event) {
+  event.preventDefault();
+  $('portfolio').attr({"class":"fadeout"});
+  $('splashpage').attr({"class":"fadein"});
+  setTimeout(function() {
+    $('portfolio').css({"display":"none"});
+  }, 
+  2000);
+});
+
 $('#enter').on('click', function(event) {
   event.preventDefault();
   $('splashpage').attr({"class":"fadeout"});
