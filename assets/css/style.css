@@ -265,4 +265,7 @@ contactpage a:active {
   #profile-pic {
     width: 100%;
   }
+  main {
+    text-align: center;
+  }
 }
