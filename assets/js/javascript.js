@@ -2,7 +2,7 @@ $(window).on("load", function() {
   $('body').removeClass('no-display');
   init();
   animate();
-  $('body').css({"backgroun-image":'url("../images/IMG_0937\ copy.JPG")'});
+  $('body').css("background-image", "url('./assets/images/IMG_0937.JPG')");
 });
 
 
