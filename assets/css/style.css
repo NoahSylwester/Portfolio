@@ -172,6 +172,7 @@ main a {
 .portfolio-tag a {
   font-family: 'Julius Sans One', sans-serif;
   color: rgb(185, 241, 255) !important;
+  display: block;
 }
 
 .portfolio-tag a:hover {
@@ -181,6 +182,10 @@ main a {
 
 .portfolio-tag a:active {
   color: whitesmoke !important;
+}
+
+.git-link {
+  font-size: 1rem;
 }
 
 .carousel-item img {
@@ -194,6 +199,19 @@ main a {
 
 contactpage {
   text-shadow: 0, 0, 50px black;
+}
+
+contactpage a {
+  color: rgb(185, 241, 255) !important;
+}
+
+contactpage a:hover {
+  text-decoration: none;
+  color: rgb(151, 255, 151) !important;
+}
+
+contactpage a:active {
+  color: whitesmoke !important;
 }
 
 .contact-main {
