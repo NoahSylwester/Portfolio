@@ -1,8 +1,8 @@
-$(document).ready(function(){
+$(window).on("load", function() {
   $('body').removeClass('no-display');
   init();
   animate();
-})
+});
 
 
 // *******
