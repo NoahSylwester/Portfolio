@@ -261,7 +261,7 @@ contactpage a:active {
   100% {opacity: 1; padding: 2rem;}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   #profile-pic {
     width: 100%;
   }
