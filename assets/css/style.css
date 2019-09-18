@@ -16,7 +16,7 @@ html, body {
 body {
   position: relative;
   background-image: url("../images/IMG_0276\ copy.jpg");
-  background-size: 100%;
+  background-size: cover;
   /* background: rgb(52,58,64); */
 }
 
@@ -68,7 +68,7 @@ splashpage {
   position: absolute;
   z-index: -1;
   background-image: url("../images/IMG_0276\ copy.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 
 splashpage div {
