@@ -118,7 +118,7 @@ animate();
 // begin code for main portfolio
 // *******
 
-// navigation events
+// to and from splash page
 
 $('#enter').on('click', function(event) {
   event.preventDefault();
@@ -142,4 +142,28 @@ $('.navbar-brand').on('click', function(event) {
   2000);
 });
 
-$('')
+// nav links
+
+$('#about-link').on('click', function(event) {
+  event.preventDefault();
+  $('aboutpage').removeClass("no-display");
+  $('portfoliopage').addClass('no-display');
+  $('contactpage').addClass('no-display');
+  $('aboutpage').attr({"class":"fadein"});
+});
+
+$('#portfolio-link').on('click', function(event) {
+  event.preventDefault();
+  $('portfoliopage').removeClass("no-display");
+  $('aboutpage').addClass('no-display');
+  $('contactpage').addClass('no-display');
+  $('portfoliopage').attr({"class":"fadein"});
+});
+
+$('#contact-link').on('click', function(event) {
+  event.preventDefault();
+  $('contactpage').removeClass("no-display");
+  $('portfoliopage').addClass('no-display');
+  $('aboutpage').addClass('no-display');
+  $('contactpage').attr({"class":"fadein"});
+});

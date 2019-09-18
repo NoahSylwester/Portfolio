@@ -24,7 +24,7 @@
   <portfolio class="no-display">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Noah Sylwester</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +34,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            <a id="about-link" class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+            <a id="portfolio-link" class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a id="contact-link" class="nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -48,43 +48,54 @@
 
     <!-- about page -->
     <aboutpage>
-
+      <main>
+        <img id="profile-pic" src="./assets/images/profile_pic copy.jpg" alt="profile pic">
+        <h2>About Me</h2>
+        <a href="https://github.com/noahsylwester">Github link</a></br>
+        <a href="#">Resume</a>
+        <p>
+          </br>I'm a recent graduate from the University of Oregon with a MM in oboe performance, and I also have a BS in
+          applied physics and a BM in oboe performance from the same University. I have experience in Python and R in a data
+          science context, and I'm currently learning more technologies as part of a full-stack program based in Portland.
+            In my free time I play banjo, piano, sometimes mandolin, and enjoy reading horror. I like coffee, cats, and long
+          walks.</p>
+      </main>
     </aboutpage>
 
     <!-- portfolio page -->
-    <portfoliopage>
+    <portfoliopage class="no-display">
       <!-- carousel -->
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/images/scrnli_9_17_2019_5-54-32 PM.png"
               class="d-block w-100" alt="...">
-            <h1 class="portfolio-tag"><a href="#">Netpets</a></h1>
+            <h1 class="portfolio-tag"><a id="netpets-link" href="https://github.com/NoahSylwester/Netpets">Netpets</a></h1>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/scrnli_9_17_2019_5-54-47 PM.png"
               class="d-block w-100" alt="...">
-            <h1 class="portfolio-tag"><a href="#">Giftastic</a></h1>
+            <h1 class="portfolio-tag"><a id="giftastic-link" href="https://github.com/NoahSylwester/RPS-Multiplayer">Giftastic</a></h1>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/scrnli_9_17_2019_5-57-10 PM.png"
               class="d-block w-100" alt="...">
-            <h1 class="portfolio-tag"><a href="#">Cattle vs. Mechs</a></h1>
+            <h1 class="portfolio-tag"><a id="rpg-link" href="https://github.com/NoahSylwester/unit-4-game">Cattle vs. Mechs</a></h1>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/scrnli_9_17_2019_5-57-23 PM.png"
               class="d-block w-100" alt="...">
-            <h1 class="portfolio-tag"><a href="#">Hangman</a></h1>
+            <h1 class="portfolio-tag"><a id="hangman-link" href="https://github.com/NoahSylwester/Word-Guess-Game">Hangman</a></h1>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/scrnli_9_17_2019_5-57-35 PM.png"
               class="d-block w-100" alt="...">
-            <h1 class="portfolio-tag"><a href="#">RPS Online</a></h1>
+            <h1 class="portfolio-tag"><a id="rps-link" href="https://github.com/NoahSylwester/RPS-Multiplayer">RPS Online</a></h1>
           </div>
           <div class="carousel-item">
             <img src="./assets/images/scrnli_9_17_2019_5-57-48 PM.png"
               class="d-block w-100" alt="...">
-            <h1 class="portfolio-tag"><a href="#">Trivia Game</a></h1>
+            <h1 class="portfolio-tag"><a id="trivia-link" href="https://github.com/NoahSylwester/TriviaGame">Trivia Game</a></h1>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -99,8 +110,14 @@
     </portfoliopage>
 
     <!-- contact page -->
-    <contactpage>
-
+    <contactpage class="no-display">
+      <div class="contact-main">
+        <div>
+        <h2>Contact me!</h2>
+        <h3>Email: nanoabram@comcast.net</h3>
+        <h3>Phone: 503-608-2048</h3>
+        </div>
+      </div>
     </contactpage>
 
   </portfolio>
