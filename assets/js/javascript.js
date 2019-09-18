@@ -118,19 +118,28 @@ animate();
 // begin code for main portfolio
 // *******
 
-$('.navbar-brand').on('click', function(event) {
-  event.preventDefault();
-  $('portfolio').attr({"class":"fadeout"});
-  $('splashpage').attr({"class":"fadein"});
-  setTimeout(function() {
-    $('portfolio').css({"display":"none"});
-  }, 
-  2000);
-});
+// navigation events
 
 $('#enter').on('click', function(event) {
   event.preventDefault();
   $('splashpage').attr({"class":"fadeout"});
-  $('portfolio').css({"display":"block"})
+  $('portfolio').removeClass("no-display");
   $('portfolio').attr({"class":"fadein"});
-})
+  setTimeout(function() {
+    $('splashpage').addClass("no-display");
+  }, 
+  2000);
+});
+
+$('.navbar-brand').on('click', function(event) {
+  event.preventDefault();
+  $('splashpage').removeClass("no-display");
+  $('portfolio').attr({"class":"fadeout"});
+  $('splashpage').attr({"class":"fadein"});
+  setTimeout(function() {
+    $('portfolio').addClass("no-display");
+  }, 
+  2000);
+});
+
+$('')
