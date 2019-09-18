@@ -1,3 +1,9 @@
+$(document).ready(function(){
+  $('body').removeClass('no-display');
+  init();
+  animate();
+})
+
 
 // *******
 // begin code for splash page canvas
@@ -107,8 +113,6 @@ function animate() {
   }
 }
 
-init();
-animate();
 
 // *******
 // end code for splash page canvas
