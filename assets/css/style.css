@@ -193,6 +193,15 @@ main a {
   object-fit: cover;
 }
 
+.mobile-portfolio-item {
+  position: relative;
+}
+
+.mobile-portfolio-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
 /* end css for portfolio page */
 
 /* begin css for contact page */
@@ -261,11 +270,21 @@ contactpage a:active {
   100% {opacity: 1; padding: 2rem;}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   #profile-pic {
     width: 100%;
   }
   main {
     text-align: center;
   }
+  .mobile-portfolio {
+    display: inline-block;
+  }
+  .portfolio-tag {
+    top: 35%;
+  }
+  .carousel {
+    display: none;
+  }
+
 }

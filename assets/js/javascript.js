@@ -154,7 +154,7 @@ $('#about-link').on('click', function(event) {
   $('aboutpage').removeClass("no-display");
   $('portfoliopage').addClass('no-display');
   $('contactpage').addClass('no-display');
-  $('aboutpage').attr({"class":"fadein"});
+  // $('aboutpage').attr({"class":"fadein"});
 });
 
 $('#portfolio-link').on('click', function(event) {
@@ -162,7 +162,7 @@ $('#portfolio-link').on('click', function(event) {
   $('portfoliopage').removeClass("no-display");
   $('aboutpage').addClass('no-display');
   $('contactpage').addClass('no-display');
-  $('portfoliopage').attr({"class":"fadein"});
+  // $('portfoliopage').attr({"class":"fadein"});
 });
 
 $('#contact-link').on('click', function(event) {
@@ -170,5 +170,5 @@ $('#contact-link').on('click', function(event) {
   $('contactpage').removeClass("no-display");
   $('portfoliopage').addClass('no-display');
   $('aboutpage').addClass('no-display');
-  $('contactpage').attr({"class":"fadein"});
+  // $('contactpage').attr({"class":"fadein"});
 });
