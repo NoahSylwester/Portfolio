@@ -1,6 +1,6 @@
 # Portfolio
 
-A fully mobile-responsive portfolio.
+My fully mobile-responsive portfolio.
 
 Live at
 
