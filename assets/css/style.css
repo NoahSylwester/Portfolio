@@ -143,6 +143,10 @@ main a {
   font-size: 1rem;
 }
 
+.logo {
+  height: 1rem;
+}
+
 #profile-pic {
   margin: 0 2rem 0 0;
   float: left;
