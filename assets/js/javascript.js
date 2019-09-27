@@ -1,8 +1,44 @@
-$(window).on("load", function() {
+function loadCanvasWindow() {
   $('body').removeClass('no-display');
   init();
   animate();
   $('body').css("background-image", "url('./assets/images/IMG_0937.JPG')");
+}
+
+// $(window).on("load", function() {
+//   loadCanvasWindow();
+//   localStorage.setItem("page", "splash");
+// });
+
+$(window).on("pageshow", function() {
+  switch (localStorage.getItem("page")) {
+    case "splash":
+        loadCanvasWindow();
+        break;
+    case "about":
+        loadCanvasWindow();
+        $('splashpage').addClass('no-display');
+        $('portfolio').removeClass('no-display');
+        $('portfoliopage').addClass('no-display');
+        $('contactpage').addClass('no-display');
+        break;
+    case "portfolio":
+        loadCanvasWindow();
+        $('splashpage').addClass('no-display');
+        $('portfolio').removeClass('no-display');
+        $('aboutpage').addClass('no-display');
+        $('portfoliopage').removeClass('no-display');
+        $('contactpage').addClass('no-display');
+        break;
+    case "contact":
+        loadCanvasWindow();
+        $('splashpage').addClass('no-display');
+        $('portfolio').removeClass('no-display');
+        $('portfoliopage').addClass('no-display');
+        $('contactpage').removeClass('no-display');
+        $('aboutpage').addClass('no-display');
+        break;
+  }
 });
 
 
@@ -127,6 +163,7 @@ function animate() {
 
 $('#enter').on('click', function(event) {
   event.preventDefault();
+  localStorage.setItem("page", "about");
   $('splashpage').attr({"class":"fadeout"});
   $('portfolio').removeClass("no-display");
   $('portfolio').attr({"class":"fadein"});
@@ -138,6 +175,7 @@ $('#enter').on('click', function(event) {
 
 $('.navbar-brand').on('click', function(event) {
   event.preventDefault();
+  localStorage.setItem("page", "splash");
   $('splashpage').removeClass("no-display");
   $('portfolio').attr({"class":"fadeout"});
   $('splashpage').attr({"class":"fadein"});
@@ -151,6 +189,7 @@ $('.navbar-brand').on('click', function(event) {
 
 $('#about-link').on('click', function(event) {
   event.preventDefault();
+  localStorage.setItem("page", "about");
   $('aboutpage').removeClass("no-display");
   $('portfoliopage').addClass('no-display');
   $('contactpage').addClass('no-display');
@@ -159,6 +198,7 @@ $('#about-link').on('click', function(event) {
 
 $('#portfolio-link').on('click', function(event) {
   event.preventDefault();
+  localStorage.setItem("page", "portfolio");
   $('portfoliopage').removeClass("no-display");
   $('aboutpage').addClass('no-display');
   $('contactpage').addClass('no-display');
@@ -167,6 +207,7 @@ $('#portfolio-link').on('click', function(event) {
 
 $('#contact-link').on('click', function(event) {
   event.preventDefault();
+  localStorage.setItem("page", "contact");
   $('contactpage').removeClass("no-display");
   $('portfoliopage').addClass('no-display');
   $('aboutpage').addClass('no-display');
