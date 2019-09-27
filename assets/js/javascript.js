@@ -5,10 +5,9 @@ function loadCanvasWindow() {
   $('body').css("background-image", "url('./assets/images/IMG_0937.JPG')");
 }
 
-// $(window).on("load", function() {
-//   loadCanvasWindow();
-//   localStorage.setItem("page", "splash");
-// });
+$(window).on("load", function() {
+  loadCanvasWindow();
+});
 
 $(window).on("pageshow", function() {
   switch (localStorage.getItem("page")) {
@@ -163,7 +162,6 @@ function animate() {
 
 $('#enter').on('click', function(event) {
   event.preventDefault();
-  localStorage.setItem("page", "about");
   $('splashpage').attr({"class":"fadeout"});
   $('portfolio').removeClass("no-display");
   $('portfolio').attr({"class":"fadein"});
