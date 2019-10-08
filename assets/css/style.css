@@ -78,6 +78,7 @@ splashpage div {
   padding: 2rem;
   border: 2px rgb(185, 241, 255) solid;
   border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.192);
   animation-name: fadein;
   animation-duration: 3s;
 }
