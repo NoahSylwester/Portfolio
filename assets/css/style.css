@@ -144,6 +144,11 @@ main a {
   font-size: 1rem;
 }
 
+main p {
+  color: white;
+  font-size: 1rem;
+}
+
 .logo {
   height: 1rem;
 }
@@ -166,7 +171,7 @@ main a {
 
 .portfolio-tag {
   position: absolute;
-  top: 42%;
+  top: 38%;
   width: 100%;
   text-align: center;
   color: rgb(185, 241, 255) !important;
@@ -187,6 +192,12 @@ main a {
 
 .portfolio-tag a:active {
   color: whitesmoke !important;
+}
+
+.portfolio-tag p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
 }
 
 .git-link {
@@ -232,6 +243,7 @@ contactpage a:active {
   color: rgb(185, 241, 255) !important;
   padding-right: 10%;
   padding-left: 10%;
+  text-align: center;
 }
 
 .contact-main div {
@@ -242,8 +254,11 @@ contactpage a:active {
   margin: auto;
   border: 1px solid rgb(185, 241, 255);
   border-radius: 4px;
-  text-align: center;
   overflow-wrap: break-word;
+}
+
+.contact-main a {
+  color: white !important;
 }
 
 /* begin css for contact page */
