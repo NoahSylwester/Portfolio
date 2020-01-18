@@ -144,13 +144,26 @@ main a {
   font-size: 1rem;
 }
 
-main p {
-  color: white;
+.proficiencies {
+  color: rgb(185, 241, 255);
   font-size: 1rem;
 }
 
+.summary {
+  color: white;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reference-link {
+  padding: 3px;
+  text-decoration: none !important;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
 .logo {
-  height: 1rem;
+  width: 1rem;
 }
 
 #profile-pic {
