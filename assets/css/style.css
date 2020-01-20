@@ -157,9 +157,16 @@ main a {
 }
 
 .reference-link {
+  text-shadow: 0 0 5px black;
   padding: 3px;
   text-decoration: none !important;
-  background-color: rgba(0, 0, 0, 0.308);
+  background-color: rgba(0, 0, 0, 0.199);
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.reference-link:hover {
+  color: rgb(151, 255, 151) !important;
 }
 
 .logo {
@@ -211,6 +218,7 @@ main a {
   margin-top: 10px;
   font-size: 1rem;
   color: white;
+  cursor: default;
 }
 
 .git-link {
