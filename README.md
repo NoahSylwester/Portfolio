@@ -1,6 +1,8 @@
 # Portfolio
 
-My fully mobile-responsive portfolio. A single page site that preserves user location on reload.
+My fully mobile-responsive portfolio. A single page site constructed with Bootstrap and jQuery that preserves user location on reload.
+
+Enter through the splash page and click through the tabs.
 
 ![splash screenshot](./screenshots/portfolioScreen1.png)
 
