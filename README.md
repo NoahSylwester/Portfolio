@@ -2,8 +2,14 @@
 
 My fully mobile-responsive portfolio. A single page site that preserves user location on reload.
 
-Check out my work!
+![splash screenshot](./screenshots/portfolioScreen1.png)
 
-Live at
+Check out my work! The projects are arranged in a maneuverable carousel, with a brief description and live/github links.
 
-https://noahsylwester.github.io/Portfolio/
+![portfolio screenshot](./screenshots/portfolioScreen2.png)
+
+If you are on a mobile device, the carousel becomes a single, scrollable column of projects
+
+![splash screenshot](./screenshots/portfolioScreen3.png)
+
+#### By Noah Sylwester
